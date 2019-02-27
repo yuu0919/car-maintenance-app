@@ -1,0 +1,18 @@
+.users-left
+  %ul.users-left__box
+    %li.users-left__box--nav
+      = link_to "トップへ戻る", root_path
+    %li.users-left__box--nav
+      = link_to "メンテナンス情報を入力する", new_history_path
+    %li.users-left__box--nav
+      = link_to "メンテナンス記録を見る", histories_path
+    %li.users-left__box--nav
+      = link_to "車体情報の登録", new_car_path
+    %li.users-left__box--nav
+      = link_to "車体情報の確認", cars_path
+    %li.users-left__box--nav
+      = link_to "ユーザー情報の確認", profile_users_path
+    %li.users-left__box--nav
+      = link_to "ユーザー情報の編集", edit_user_path(current_user)
+    %li.users-left__box--nav
+      = link_to "ログアウト", destroy_user_session_path, method: :delete

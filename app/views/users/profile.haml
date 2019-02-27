@@ -1,0 +1,17 @@
+.table-box
+  %table
+    %tr
+      %th
+        登録者名
+      %td
+        = current_user.name
+    %tr
+      %th
+        メールアドレス
+      %td
+        = current_user.email
+    %tr
+      %th
+        登録台数
+      %td
+        = "#{current_user.cars.length}" + "台"

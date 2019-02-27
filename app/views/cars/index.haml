@@ -1,0 +1,26 @@
+.container
+  .container__box
+    - if @cars.length > 0
+      %table.table-cars
+        %tr
+          %th
+            車名
+          %th
+            年式
+          %th
+            型式
+          %th
+            タイヤサイズ
+        - @cars.each do |car|
+          %tr
+            %td
+              = car.name
+            %td
+              = car.year
+            %td
+              = car.model
+            %td
+              = car.tire
+    - else
+      %h3
+        登録している車はありません

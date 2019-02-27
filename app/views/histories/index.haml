@@ -1,0 +1,33 @@
+.container
+  .container__box
+    - if @cars.length > 0
+      - @cars.each do |car|
+        %h1
+          = car.name
+        - if car.histories.length > 0
+          %table.table-records
+            %tr
+              %th
+                メンテナンス日
+              %th
+                内容
+              %th
+                コメント
+              %th
+                次回
+            %tr
+              %td
+                = car.histories.last.maintenance
+              %td
+                = car.histories.last.title
+              %td
+                = car.histories.last.comment
+              %td
+                = car.histories.last.plan
+          = link_to "全ての記録を見る", car_path(car), class: "button"
+        - else
+          %h2.history
+            記録がありません
+    - else
+      %h3
+        登録している車はありません

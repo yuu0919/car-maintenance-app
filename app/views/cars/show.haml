@@ -1,0 +1,24 @@
+.container
+  .container__box
+    %h1
+      = @car.name
+    %table.table-records
+      %tr
+        %th
+          メンテナンス日
+        %th
+          内容
+        %th
+          コメント
+        %th
+          次回
+      - @histories.each do |history|
+        %tr
+          %td
+            = history.maintenance
+          %td
+            = history.title
+          %td
+            = history.comment
+          %td
+            = history.plan

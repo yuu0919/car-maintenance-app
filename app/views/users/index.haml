@@ -1,0 +1,18 @@
+.user-menu
+  %ul.user-menu__box
+    %li.user-menu__box--list
+      = link_to "トップへ戻る", root_path
+    %li.user-menu__box--list
+      = link_to "メンテナンス情報を入力する", new_history_path
+    %li.user-menu__box--list
+      = link_to "メンテナンス記録を見る", histories_path
+    %li.user-menu__box--list
+      = link_to "車体情報の登録", new_car_path
+    %li.user-menu__box--list
+      = link_to "車体情報の確認", cars_path
+    %li.user-menu__box--list
+      = link_to "ユーザー情報の確認", profile_users_path
+    %li.user-menu__box--list
+      = link_to "ユーザー情報の編集", edit_user_path(current_user)
+    %li.user-menu__box--list
+      = link_to "ログアウト", destroy_user_session_path, method: :delete

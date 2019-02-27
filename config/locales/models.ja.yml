@@ -1,0 +1,13 @@
+ja:
+  activerecord:
+    attributes:
+      history:
+        maintenance: メンテナンス日
+        plan: 次回メンテナンス日
+        title: 内容
+        comment: コメント
+      car:
+        tire: タイヤ
+        name: 車名
+        model: 型式
+        year: 年式

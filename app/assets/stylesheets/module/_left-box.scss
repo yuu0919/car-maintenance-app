@@ -1,0 +1,22 @@
+.users-left {
+  width: 300px;
+  &__box {
+    border: 1px solid #aaa;
+    background-color: #fff;
+    &--nav {
+      @include clearfix;
+      display: block;
+      a {
+        display: block;
+        text-decoration: none;
+        color: #333;
+        padding: 20px 40px;
+        border: 1px solid #eee;
+      }
+      a:hover {
+        background-color: #eee;
+        padding: 18px 40px 22px 30px;
+      }
+    }
+  }
+}

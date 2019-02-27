@@ -1,0 +1,74 @@
+.table-box {
+  padding: 0 0 0 100px;
+  overflow: auto;
+  height: 400px;
+  table {
+    background-color: #fff;
+    border-collapse: collapse;
+    width: 700px;
+    tr {
+      height: 100px;
+      th {
+        border: 1px solid #eee;
+        background-color: #fafafa;
+        vertical-align: middle;
+        padding: 10px 40px;
+      }
+      td {
+        border: 1px solid #eee;
+        vertical-align: middle;
+        padding: 10px 40px;
+      }
+    }
+  }
+}
+
+.table-cars {
+  overflow: auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  width: 900px;
+  tr {
+    height: 80px;
+    th {
+      font-size: 18px;
+      width: calc(100% / 4);
+      border: 1px solid #eee;
+      background-color: #fafafa;
+      vertical-align: middle;
+      padding: 5px 20px;
+    }
+    td {
+      font-size: 16px;
+      word-wrap: break-word;
+      border: 1px solid #eee;
+      vertical-align: middle;
+      padding: 5px 20px;
+    }
+  }
+}
+
+.table-records {
+  overflow: auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  width: 900px;
+  tr {
+    height: 80px;
+    th {
+      font-size: 18px;
+      width: calc(100% / 5);
+      border: 1px solid #eee;
+      background-color: #fafafa;
+      vertical-align: middle;
+      padding: 5px 20px;
+    }
+    td {
+      font-size: 16px;
+      word-wrap: break-word;
+      border: 1px solid #eee;
+      vertical-align: middle;
+      padding: 5px 20px;
+    }
+  }
+}
