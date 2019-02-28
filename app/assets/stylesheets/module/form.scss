@@ -1,0 +1,63 @@
+.form {
+  padding: 0px 50px;
+  margin: 0 0 0 50px;
+  height: 500px;
+  width: 900px;
+  background-color: cover;
+  &__box {
+    display: flex;
+    &--left {
+      width: 30%;
+      background-color: #fafafa;
+      text-align: center;
+      .label {
+        padding: 3px 0;
+        margin: 20px 0px;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 40px;
+      }
+    }
+    &--right {
+      width: 70%;
+      background-color: #eee;
+      text-align: center;
+      .text {
+        padding: 0 20px;
+        margin: 20px 0px;
+        height: 40px;
+        width: 80%;
+        font-size: 24px;
+      }
+      select {
+        font-size: 16px;
+        border: 1px solid #aaa;
+        display: inline-block;
+        margin: 20px 10px;
+        height: 46px;
+        width: 185px;
+      }
+    }
+  }
+  .submit {
+    margin: 40px auto;
+    display: block;
+    border-radius: 5px;
+    font-size: 19pt;
+    text-align: center;
+    cursor: pointer;
+    padding: 28px 24px;
+    background-color: #333;
+    color: #fff;
+    line-height: 1em;
+    transition: .3s;
+    box-shadow: 8px 8px 22px #666;
+    border: 2px solid #999;
+  }
+  .submit:hover {
+    box-shadow: none;
+    color: #999;
+    background-color: #fff;
+  }
+}

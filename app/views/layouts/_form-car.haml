@@ -1,10 +1,19 @@
-= form_with(model: car, url: cars_path, local: true, class: "form") do |f|
-  = f.label :name
-  = f.text_field :name, placeholder: "車名"
-  = f.label :model
-  = f.text_field :model, placeholder: "型式"
-  = f.label :year
-  = f.text_field :year, placeholder: "年式"
-  = f.label :tire
-  = f.text_field :tire, placeholder: "タイヤ"
+= form_with(model: car, local: true, class: "form") do |f|
+  .form__box
+    .form__box--left
+      = f.label :name, class: "label"
+      %br
+      = f.label :model, class: "label"
+      %br
+      = f.label :year, class: "label"
+      %br
+      = f.label :tire, class: "label"
+    .form__box--right
+      = f.text_field :name, placeholder: "車名", class: "text"
+      %br
+      = f.text_field :model, placeholder: "型式", class: "text"
+      %br
+      = f.text_field :year, placeholder: "年式", class: "text"
+      %br
+      = f.text_field :tire, placeholder: "タイヤ", class: "text"
   = f.submit '登録する', class: "submit"

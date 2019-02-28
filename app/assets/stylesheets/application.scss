@@ -1,10 +1,4 @@
 @import 'mixin/clearfix', 'config/reset';
-@import 'module/left-box', 'module/table';
+@import 'module/left-box', 'module/table', 'module/form';
 @import 'histories';
 @import 'users';
-
-.comment {
-  height: 40px;
-  width: 400px;
-  font-size: 24px;
-}

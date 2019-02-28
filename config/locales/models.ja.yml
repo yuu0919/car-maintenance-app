@@ -6,6 +6,7 @@ ja:
         plan: 次回メンテナンス日
         title: 内容
         comment: コメント
+        car_select: 車の選択
       car:
         tire: タイヤ
         name: 車名

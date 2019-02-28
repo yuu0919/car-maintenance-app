@@ -36,11 +36,15 @@
     padding: 0 0 0 100px;
     overflow: auto;
     height: 800px;
+    &__box {
+      width: 900px;
+    }
     h1 {
-      font-size: 20px;
+      font-size: 30px;
       text-align: center;
       color: #fff;
       background-color: #333;
+      line-height: 60px;
     }
     h2 {
       text-align: center;
