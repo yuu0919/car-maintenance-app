@@ -1,23 +1,29 @@
-= form_with(model: history, local: true, class: "form") do |f|
-  .form__box
-    .form__box--left
-      = f.label :maintenance, class: "label"
-      %br
-      = f.label :plan, class: "label"
-      %br
-      = f.label :title, class: "label"
-      %br
-      = f.label :comment, class: "label"
-      %br
-      = f.label :car_select, class: "label"
-    .form__box--right
-      = f.date_select :maintenance, class: "select"
-      %br
-      = f.date_select :plan, class: "select"
-      %br
-      = f.text_field :title, placeholder: "内容", class: "text"
-      %br
-      = f.text_field :comment, autofocus: true, placeholder: "コメント", class: "text"
-      %br
-      = f.select :car_id, @cars.collect{|c| [c.name, c.id]}
-  = f.submit '記録する', class: "submit"
+- if @cars.length > 0
+  = form_with(model: history, local: true, class: "form") do |f|
+    .form__box
+      .form__box--left
+        = f.label :maintenance, class: "label"
+        %br
+        = f.label :plan, class: "label"
+        %br
+        = f.label :title, class: "label"
+        %br
+        = f.label :comment, class: "label"
+        %br
+        = f.label :car_select, class: "label"
+      .form__box--right
+        = f.date_select :maintenance, class: "select"
+        %br
+        = f.date_select :plan, class: "select"
+        %br
+        = f.text_field :title, placeholder: "内容", class: "text"
+        %br
+        = f.text_field :comment, autofocus: true, placeholder: "コメント", class: "text"
+        %br
+        = f.select :car_id, @cars.collect{|c| [c.name, c.id]}
+    = f.submit '記録する', class: "submit"
+- else
+  .container
+    .container__box
+      %h3
+        車を登録してください

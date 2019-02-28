@@ -12,3 +12,8 @@ ja:
         name: 車名
         model: 型式
         year: 年式
+      user:
+        name: 名前
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード(再入力)
