@@ -1,17 +1,16 @@
-%h2 ログイン
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
-    .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "ログインする"
-= link_to "新規登録する", new_user_registration_path, class: "link"
+.contents
+  %h2 --------- ログイン ---------
+  = form_with(model: @user, url: session_path(resource_name), class: "contents__form") do |f|
+    .devise
+      .devise__left
+        = f.label :email, class: "label"
+        %br
+        = f.label :password, class: "label"
+      .devise__right
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "text"
+        %br
+        = f.password_field :password, autocomplete: "current-password", class: "text"
+    = f.submit "ログインする", class: "submit"
+    %br
+    %h3 or
+    = link_to "新規登録へ", new_user_registration_path, class: "link"
